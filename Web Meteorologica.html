@@ -1,186 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Temperaturas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+
+    
 </head>
-
 <body>
-    <div class="container">
-        <h1>Registro de Temperaturas Semanal</h1>
-        <form id="temperature-form">
-            <ul class="list-group">
-
-                <li class="list-group-item">
-                    <h5>Lunes</h5>
-                    <div class="form-group">
-                        <label for="lunes_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="lunes_mañana"min="-50" max="100" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lunes_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="lunes_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lunes_noche">Noche</label>
-                        <input type="number" class="form-control" id="lunes_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h5>Martes</h5>
-                    <div class="form-group">
-                        <label for="martes_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="martes_mañana"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="martes_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="martes_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="martes_noche">Noche</label>
-                        <input type="number" class="form-control" id="martes_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h5>Miercoles</h5>
-                    <div class="form-group">
-                        <label for="Miercoles_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="Miercoles_mañana"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Miercoles_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="Miercoles_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Miercoles_noche">Noche</label>
-                        <input type="number" class="form-control" id="Miercoles_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h5>Jueves</h5>
-                    <div class="form-group">
-                        <label for="Jueves_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="Jueves_mañana"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Jueves_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="Jueves_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Jueves_noche">Noche</label>
-                        <input type="number" class="form-control" id="Jueves_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h5>Viernes</h5>
-                    <div class="form-group">
-                        <label for="Viernes_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="Viernes_mañana"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Viernes_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="Viernes_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Viernes_noche">Noche</label>
-                        <input type="number" class="form-control" id="Viernes_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h5>Sabado</h5>
-                    <div class="form-group">
-                        <label for="Sabado_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="Sabado_mañana"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Sabado_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="Sabado_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Sabado_noche">Noche</label>
-                        <input type="number" class="form-control" id="Sabado_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h5>Domingo</h5>
-                    <div class="form-group">
-                        <label for="Domingo_mañana">Mañana</label>
-                        <input type="number" class="form-control" id="Domingo_mañana"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Domingo_mediodia">Mediodía</label>
-                        <input type="number" class="form-control" id="Domingo_mediodia"min="-50" max="100"required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Domingo_noche">Noche</label>
-                        <input type="number" class="form-control" id="Domingo_noche"min="-50" max="100"required>
-                    </div>
-                </li>
-
-
-
-            </ul>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </div>
-
+    <h1>Registro de Temperaturas</h1>
+    <form>
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td><input type="number" id="lunesManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="lunesMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="lunesNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td><input type="number" id="martesManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="martesMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="martesNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td><input type="number" id="miercolesManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="miercolesMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="miercolesNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td><input type="number" id="juevesManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="juevesMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="juevesNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td><input type="number" id="viernesManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="viernesMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="viernesNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Sabado</td>
+                <td><input type="number" id="sabadoManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="sabadoMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="sabadoNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Mediodía</th>
+                <th>Noche</th>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td><input type="number" id="domingoManana" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="domingoMediodia" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="domingoNoche" min="-20" max="50" step="0.1"></td>
+            </tr>
+            
+        </table>
+        <button type="button" onclick="calcularPromedios()">Calcular Promedios</button>
+    </form>
+    <canvas id="grafica"></canvas>
+    
+    <div id="temperaturasIngresadas"></div>
+    
     <script>
-        class DatoMeteorológico {
-            constructor(fecha, temperaturaMañana, temperaturaMediodia, temperaturaNoche) {
-                this.fecha = fecha;
-                this.temperaturaMañana = temperaturaMañana;
-                this.temperaturaMediodia = temperaturaMediodia;
-                this.temperaturaNoche = temperaturaNoche;
-            }
-        }
+        function calcularPromedios() {
+            var temperaturas = {
+                lunes: {
+                    mañana: parseFloat(document.getElementById("lunesManana").value),
+                    mediodía: parseFloat(document.getElementById("lunesMediodia").value),
+                    noche: parseFloat(document.getElementById("lunesNoche").value)
+                },
+                martes: {
+                    mañana: parseFloat(document.getElementById("martesManana").value),
+                    mediodía: parseFloat(document.getElementById("martesMediodia").value),
+                    noche: parseFloat(document.getElementById("martesNoche").value)
+                },
+                miercoles: {
+                    mañana: parseFloat(document.getElementById("miercolesManana").value),
+                    mediodía: parseFloat(document.getElementById("miercolesMediodia").value),
+                    noche: parseFloat(document.getElementById("miercolesNoche").value)
+                },
+                jueves: {
+                    mañana: parseFloat(document.getElementById("juevesManana").value),
+                    mediodía: parseFloat(document.getElementById("juevesMediodia").value),
+                    noche: parseFloat(document.getElementById("juevesNoche").value)
+                },
+                viernes: {
+                    mañana: parseFloat(document.getElementById("viernesManana").value),
+                    mediodía: parseFloat(document.getElementById("viernesMediodia").value),
+                    noche: parseFloat(document.getElementById("viernesNoche").value)
+                },
+                sabado: {
+                    mañana: parseFloat(document.getElementById("sabadoManana").value),
+                    mediodía: parseFloat(document.getElementById("sabadoMediodia").value),
+                    noche: parseFloat(document.getElementById("sabadoNoche").value)
+                },
+                domingo: {
+                    mañana: parseFloat(document.getElementById("domingoManana").value),
+                    mediodía: parseFloat(document.getElementById("domingoMediodia").value),
+                    noche: parseFloat(document.getElementById("domingoNoche").value)
+                },
 
-        class AplicaciónMeteorológica {
-            constructor() {
-                this.datos = [];
-            }
+                
+            };
+            
+            // Calcula el promedio para cada día
+            var promedios = {
+                lunes: (temperaturas.lunes.mañana + temperaturas.lunes.mediodía + temperaturas.lunes.noche) / 3,
+                martes:(temperaturas.martes.mañana + temperaturas.martes.mediodía + temperaturas.martes.noche) / 3,
+                miercoles:(temperaturas.miercoles.mañana + temperaturas.miercoles.mediodía + temperaturas.miercoles.noche) / 3,
+                jueves:(temperaturas.jueves.mañana + temperaturas.jueves.mediodía + temperaturas.jueves.noche) / 3,
+                viernes:(temperaturas.viernes.mañana + temperaturas.viernes.mediodía + temperaturas.viernes.noche) / 3,
+                sabado:(temperaturas.sabado.mañana + temperaturas.sabado.mediodía + temperaturas.sabado.noche) / 3,
+                domingo:(temperaturas.domingo.mañana + temperaturas.domingo.mediodía + temperaturas.domingo.noche) / 3,
 
-            ingresarTemperatura(fecha, tempManana, tempMediodia, tempNoche) {
-                const dato = new DatoMeteorológico(fecha, tempManana, tempMediodia, tempNoche);
-                this.datos.push(dato);
-            }
+                
+            };
+            
+            
+            var dias = Object.keys(temperaturas);
+            
+            // Crea un array con los promedios
+            var promediosArray = dias.map(function (dia) {
+                return promedios[dia];
+            });
+            
+            /// Crea un array con todas las temperaturas ingresadas
+        var temperaturasArray = dias.map(function (dia) {
+            return [
+                temperaturas[dia].mañana,
+                temperaturas[dia].mediodía,
+                temperaturas[dia].noche
+            ];
+        });
 
-            generarInforme() {
-                console.log(this.datos);
-            }
-        }
-
-        const app = new AplicaciónMeteorológica();
-
-        document.getElementById('temperature-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            for (let i = 0; i < 7; i++) {
-                const day = i + 1;
-                const fecha = `2023-10-${day}`;
-
-                for (let timeOfDay of ["mañana", "mediodia", "noche"]) {
-                    const inputId = `${day}_${timeOfDay}`;
-                    const temperatureInput = document.getElementById(inputId);
-                    const temperature = parseInt(temperatureInput.value);
-
-                    if (temperature >= -50 && temperature <= 100) {
-                        app.ingresarTemperatura(fecha, temperature, temperature, temperature);
-                    } else {
-                        console.error(`Temperatura inválida en ${fecha} (${timeOfDay}): ${temperature}`);
+        // Dibuja la gráfica de barras
+        var ctx = document.getElementById("grafica").getContext("2d");
+        var myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: dias,
+                datasets: [
+                    {
+                        label: "Mañana",
+                        data: temperaturasArray.map(function (temps) {
+                            return temps[0];
+                        }),
+                        backgroundColor: "rgba(255, 99, 132, 0.2)",
+                        borderColor: "rgba(255, 99, 132, 1)",
+                        borderWidth: 1
+                    },
+                    {
+                        label: "Mediodía",
+                        data: temperaturasArray.map(function (temps) {
+                            return temps[1];
+                        }),
+                        backgroundColor: "rgba(75, 192, 192, 0.2)",
+                        borderColor: "rgba(75, 192, 192, 1)",
+                        borderWidth: 1
+                    },
+                    {
+                        label: "Noche",
+                        data: temperaturasArray.map(function (temps) {
+                            return temps[2];
+                        }),
+                        backgroundColor: "rgba(54, 162, 235, 0.2)",
+                        borderColor: "rgba(54, 162, 235, 1)",
+                        borderWidth: 1
+                    },
+                    {
+                        label: "Promedio",
+                        data: promediosArray,
+                        backgroundColor: "rgba(255, 206, 86, 0.2)",
+                        borderColor: "rgba(255, 206, 86, 1)",
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 }
             }
-
-            app.generarInforme();
         });
+    }
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
