@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Temperaturas</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Temperaturas Semanal</h1>
+        <form id="temperature-form">
+            <ul class="list-group">
+
+                <li class="list-group-item">
+                    <h5>Lunes</h5>
+                    <div class="form-group">
+                        <label for="lunes_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="lunes_mañana"min="-50" max="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lunes_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="lunes_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lunes_noche">Noche</label>
+                        <input type="number" class="form-control" id="lunes_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Martes</h5>
+                    <div class="form-group">
+                        <label for="martes_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="martes_mañana"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="martes_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="martes_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="martes_noche">Noche</label>
+                        <input type="number" class="form-control" id="martes_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Miercoles</h5>
+                    <div class="form-group">
+                        <label for="Miercoles_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="Miercoles_mañana"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Miercoles_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="Miercoles_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Miercoles_noche">Noche</label>
+                        <input type="number" class="form-control" id="Miercoles_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Jueves</h5>
+                    <div class="form-group">
+                        <label for="Jueves_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="Jueves_mañana"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Jueves_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="Jueves_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Jueves_noche">Noche</label>
+                        <input type="number" class="form-control" id="Jueves_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Viernes</h5>
+                    <div class="form-group">
+                        <label for="Viernes_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="Viernes_mañana"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Viernes_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="Viernes_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Viernes_noche">Noche</label>
+                        <input type="number" class="form-control" id="Viernes_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Sabado</h5>
+                    <div class="form-group">
+                        <label for="Sabado_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="Sabado_mañana"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Sabado_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="Sabado_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Sabado_noche">Noche</label>
+                        <input type="number" class="form-control" id="Sabado_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Domingo</h5>
+                    <div class="form-group">
+                        <label for="Domingo_mañana">Mañana</label>
+                        <input type="number" class="form-control" id="Domingo_mañana"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Domingo_mediodia">Mediodía</label>
+                        <input type="number" class="form-control" id="Domingo_mediodia"min="-50" max="100"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Domingo_noche">Noche</label>
+                        <input type="number" class="form-control" id="Domingo_noche"min="-50" max="100"required>
+                    </div>
+                </li>
+
+
+
+            </ul>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        class DatoMeteorológico {
+            constructor(fecha, temperaturaMañana, temperaturaMediodia, temperaturaNoche) {
+                this.fecha = fecha;
+                this.temperaturaMañana = temperaturaMañana;
+                this.temperaturaMediodia = temperaturaMediodia;
+                this.temperaturaNoche = temperaturaNoche;
+            }
+        }
+
+        class AplicaciónMeteorológica {
+            constructor() {
+                this.datos = [];
+            }
+
+            ingresarTemperatura(fecha, tempManana, tempMediodia, tempNoche) {
+                const dato = new DatoMeteorológico(fecha, tempManana, tempMediodia, tempNoche);
+                this.datos.push(dato);
+            }
+
+            generarInforme() {
+                console.log(this.datos);
+            }
+        }
+
+        const app = new AplicaciónMeteorológica();
+
+        document.getElementById('temperature-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            for (let i = 0; i < 7; i++) {
+                const day = i + 1;
+                const fecha = `2023-10-${day}`;
+
+                for (let timeOfDay of ["mañana", "mediodia", "noche"]) {
+                    const inputId = `${day}_${timeOfDay}`;
+                    const temperatureInput = document.getElementById(inputId);
+                    const temperature = parseInt(temperatureInput.value);
+
+                    if (temperature >= -50 && temperature <= 100) {
+                        app.ingresarTemperatura(fecha, temperature, temperature, temperature);
+                    } else {
+                        console.error(`Temperatura inválida en ${fecha} (${timeOfDay}): ${temperature}`);
+                    }
+                }
+            }
+
+            app.generarInforme();
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
