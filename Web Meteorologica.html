@@ -3,73 +3,13 @@
 <head>
     <title>Registro de Temperaturas</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #333;
-            color: #fff;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        input[type="number"] {
-            width: 100%;
-            padding: 5px;
-        }
-
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-
-        #temperaturasIngresadas {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        #grafica {
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
-
+    
 
 </head>
 <body>
     <h1>Registro de Temperaturas</h1>
+
+    <!--Entrega Final-->
     <form>
         <table>
             <tr>
@@ -80,9 +20,9 @@
             </tr>
             <tr>
                 <td>Lunes</td>
-                <td><input type="number" id="lunesManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="lunesMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="lunesNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="lunesManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="lunesMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="lunesNoche" min="-20" max="50" step="1"></td>
             </tr>
             <tr>
                 <th>Día</th>
@@ -92,9 +32,9 @@
             </tr>
             <tr>
                 <td>Martes</td>
-                <td><input type="number" id="martesManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="martesMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="martesNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="martesManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="martesMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="martesNoche" min="-20" max="50" step="1"></td>
             </tr>
             <tr>
                 <th>Día</th>
@@ -104,9 +44,9 @@
             </tr>
             <tr>
                 <td>Miercoles</td>
-                <td><input type="number" id="miercolesManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="miercolesMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="miercolesNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="miercolesManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="miercolesMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="miercolesNoche" min="-20" max="50" step="1"></td>
             </tr>
             <tr>
                 <th>Día</th>
@@ -116,9 +56,9 @@
             </tr>
             <tr>
                 <td>Jueves</td>
-                <td><input type="number" id="juevesManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="juevesMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="juevesNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="juevesManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="juevesMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="juevesNoche" min="-20" max="50" step="1"></td>
             </tr>
             <tr>
                 <th>Día</th>
@@ -128,9 +68,9 @@
             </tr>
             <tr>
                 <td>Viernes</td>
-                <td><input type="number" id="viernesManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="viernesMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="viernesNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="viernesManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="viernesMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="viernesNoche" min="-20" max="50" step="1"></td>
             </tr>
             <tr>
                 <th>Día</th>
@@ -140,9 +80,9 @@
             </tr>
             <tr>
                 <td>Sabado</td>
-                <td><input type="number" id="sabadoManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="sabadoMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="sabadoNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="sabadoManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="sabadoMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="sabadoNoche" min="-20" max="50" step="1"></td>
             </tr>
             <tr>
                 <th>Día</th>
@@ -152,9 +92,9 @@
             </tr>
             <tr>
                 <td>Domingo</td>
-                <td><input type="number" id="domingoManana" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="domingoMediodia" min="-20" max="50" step="0.1"></td>
-                <td><input type="number" id="domingoNoche" min="-20" max="50" step="0.1"></td>
+                <td><input type="number" id="domingoManana" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="domingoMediodia" min="-20" max="50" step="1"></td>
+                <td><input type="number" id="domingoNoche" min="-20" max="50" step="1"></td>
             </tr>
             
         </table>
@@ -206,7 +146,7 @@
                 
             };
             
-            // Calcula el promedio para cada día
+            
             var promedios = {
                 lunes: (temperaturas.lunes.mañana + temperaturas.lunes.mediodía + temperaturas.lunes.noche) / 3,
                 martes:(temperaturas.martes.mañana + temperaturas.martes.mediodía + temperaturas.martes.noche) / 3,
@@ -222,12 +162,12 @@
             
             var dias = Object.keys(temperaturas);
             
-            // Crea un array con los promedios
+        
             var promediosArray = dias.map(function (dia) {
                 return promedios[dia];
             });
             
-            /// Crea un array con todas las temperaturas ingresadas
+            
         var temperaturasArray = dias.map(function (dia) {
             return [
                 temperaturas[dia].mañana,
@@ -236,7 +176,7 @@
             ];
         });
 
-        // Dibuja la gráfica de barras
+        
         var ctx = document.getElementById("grafica").getContext("2d");
         var myChart = new Chart(ctx, {
             type: "bar",
